@@ -1,0 +1,21 @@
+{
+  "name": "browser-extensions-manager-ui-mypractice",
+  "version": "1.0.0",
+  "description": "![Design preview for the Browser extensions manager UI coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass --watch scss:assets/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "autoprefixer": "^10.4.21",
+    "bootstrap": "^5.3.8"
+  }
+}

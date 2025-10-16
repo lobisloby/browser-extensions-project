@@ -1,0 +1,14 @@
+@use'custom' as *;
+
+// IMPORT THE COMPONENTS
+@use 'components/animation';
+@use 'components/button';
+@use 'components/mixin';
+@use 'components/typography';
+
+
+
+
+body {
+    background-color: aliceblue;
+}
