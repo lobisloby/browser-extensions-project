@@ -1,0 +1,11 @@
+@use'../components/mixin' as *;
+@use'../custom' as *;
+
+
+body {
+    @include linear-light;
+
+    [data-bs-theme="dark"] & {
+        @include linear-dark;
+    }
+}

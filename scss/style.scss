@@ -6,6 +6,9 @@
 @use 'components/mixin';
 @use 'components/typography';
 
+// IMPORT THE SECTIONS
+
+@import'section/global';
 
 @import'../node_modules/bootstrap/scss/functions';
 @import'../node_modules/bootstrap/scss/mixins';

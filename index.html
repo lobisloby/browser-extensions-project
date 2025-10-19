@@ -33,6 +33,9 @@
     <!-- Bootstrap JS Bundle with Popper (load first) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Custom Script (loads after Bootstrap) -->
+    <script src="assets/js/script.js" defer></script>
+
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -49,7 +52,7 @@
     <!--                   START HEADER SECTION  -->
     <!-- ////////////////////////////////////////////////////// -->
     <header>
-      <nav class="navbar bg-body-tertiary">
+      <nav class="navbar">
         <div class="container rounded-1 mb-5 mt-3 p-2">
           <a class="navbar-brand" href="#">
             <img src="assets/images/logo.svg" alt="Logo" />
@@ -61,8 +64,9 @@
               class="btn-check"
               id="btn-check-4"
               autocomplete="off"
+              aria-label="Toggle dark mode"
             />
-            <label class="btn btn-primary" for="btn-check-4">
+            <label class="btn btn-outline-dark toggle-mod" for="btn-check-4">
               <img
                 src="assets/images/icon-moon.svg"
                 alt="moon"
@@ -90,17 +94,17 @@
               class="col-lg-6 col-sm-12 container--btn text-lg-end text-sm-center"
             >
               <button
-                class="btn btn-outline-primary text-capitalize rounded-pill m-2"
+                class="btn btn-outline-primary text-capitalize rounded-pill m-2 title-button"
               >
                 all
               </button>
               <button
-                class="btn btn-outline-primary text-capitalize rounded-pill m-2"
+                class="btn btn-outline-primary text-capitalize rounded-pill m-2 title-button"
               >
                 active
               </button>
               <button
-                class="btn btn-outline-primary text-capitalize rounded-pill m-2"
+                class="btn btn-outline-primary text-capitalize rounded-pill m-2 title-button"
               >
                 Inactive
               </button>
@@ -632,13 +636,11 @@
 
     <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
 
-    <div class="attribution">
+    <div class="attribution my-3 fs-6">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a target="_blank" href="https://github.com/lobisloby">AyoubCoder</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by
+      <a target="_blank" href="https://github.com/lobisloby">AyoubCoder</a>.
     </div>
-    <!-- Custom Script (loads after all HTML content) -->
-    <script src="assets/js/script.js"></script>
   </body>
 </html>
