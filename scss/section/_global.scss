@@ -9,3 +9,23 @@ body {
         @include linear-dark;
     }
 }
+
+
+.navbar {
+
+
+    &-container {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 1rem;
+
+    }
+}
+
+[data-bs-theme="dark"] {
+    .navbar {
+        &-container {
+            background-color: var(--bs-dark);
+        }
+    }
+}

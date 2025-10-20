@@ -1,6 +1,5 @@
 @charset "UTF-8";
-:root,
-[data-bs-theme=light] {
+:root {
   --bs-body-bg: #ffffff;
   --bs-body-color: #212529;
   --bs-primary: #343afd;
@@ -11,19 +10,6 @@
   --bs-info: #0dcaf0;
   --bs-light: #eef2f6;
   --bs-dark: #212529;
-}
-
-[data-bs-theme=dark] {
-  --bs-body-bg: #0b1020;
-  --bs-body-color: #eaeaea;
-  --bs-primary: #6eaafe;
-  --bs-secondary: #a7acb8;
-  --bs-success: #51d58a;
-  --bs-danger: #ff897a;
-  --bs-warning: #76dffe;
-  --bs-info: #76dffe;
-  --bs-light: #2c3c57;
-  --bs-dark: #000000;
 }
 
 /*!
@@ -11912,6 +11898,10 @@ textarea.form-control-lg {
   transform: scale(0.9);
 }
 
+.btn-remove:hover {
+  background-color: hsl(3, 86%, 64%) !important;
+}
+
 [data-bs-theme=dark] .toggle-mod:hover {
   background: rgba(255, 255, 255, 0.1) !important;
 }
@@ -11919,6 +11909,17 @@ textarea.form-control-lg {
   outline: 2px solid #fff !important;
   outline-offset: 2px;
   background: transparent !important;
+}
+[data-bs-theme=dark] .navbar-brand img {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+[data-bs-theme=dark] .btn-remove {
+  border: 1px solid white;
+  color: whitesmoke;
+}
+[data-bs-theme=dark] .btn-remove:hover {
+  background-color: hsl(3, 86%, 64%) !important;
 }
 
 [data-bs-theme=light] .toggle-mod:hover {
@@ -11933,8 +11934,7 @@ textarea.form-control-lg {
   border: 2px solid var(--bs-body-color);
 }
 
-:root,
-[data-bs-theme=light] {
+:root {
   --bs-body-bg: #ffffff;
   --bs-body-color: #212529;
   --bs-primary: #343afd;
@@ -11945,19 +11945,6 @@ textarea.form-control-lg {
   --bs-info: #0dcaf0;
   --bs-light: #eef2f6;
   --bs-dark: #212529;
-}
-
-[data-bs-theme=dark] {
-  --bs-body-bg: #0b1020;
-  --bs-body-color: #eaeaea;
-  --bs-primary: #6eaafe;
-  --bs-secondary: #a7acb8;
-  --bs-success: #51d58a;
-  --bs-danger: #ff897a;
-  --bs-warning: #76dffe;
-  --bs-info: #76dffe;
-  --bs-light: #2c3c57;
-  --bs-dark: #000000;
 }
 
 /*!
@@ -24115,6 +24102,16 @@ body {
 }
 [data-bs-theme=dark] body {
   background: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+.navbar-container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+[data-bs-theme=dark] .navbar-container {
+  background-color: var(--bs-dark);
 }
 
 /*# sourceMappingURL=style.css.map */

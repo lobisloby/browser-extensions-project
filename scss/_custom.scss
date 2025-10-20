@@ -24,8 +24,7 @@ $secondary: $Red-700;
 
 // mode dark&white 
 
-:root,
-[data-bs-theme="light"] {
+:root {
     --bs-body-bg: #ffffff;
     --bs-body-color: #212529;
     --bs-primary: #343afd;
@@ -37,20 +36,6 @@ $secondary: $Red-700;
     --bs-light: #eef2f6;
     --bs-dark: #212529;
 }
-
-[data-bs-theme="dark"] {
-    --bs-body-bg: #0b1020;
-    --bs-body-color: #eaeaea;
-    --bs-primary: #6eaafe;
-    --bs-secondary: #a7acb8;
-    --bs-success: #51d58a;
-    --bs-danger: #ff897a;
-    --bs-warning: #76dffe;
-    --bs-info: #76dffe;
-    --bs-light: #2c3c57;
-    --bs-dark: #000000;
-}
-
 
 
 

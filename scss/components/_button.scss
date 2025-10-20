@@ -35,6 +35,15 @@
     }
 }
 
+// CUSTOM BUTTTON BUTTON
+.btn-remove {
+
+
+    &:hover {
+        background-color: $primary !important;
+    }
+}
+
 // Dark mode specific styles
 [data-bs-theme="dark"] {
     .toggle-mod {
@@ -47,6 +56,23 @@
             outline: 2px solid #fff !important; // White outline for dark mode
             outline-offset: 2px;
             background: transparent !important;
+        }
+    }
+
+    // Make logo white in dark mode
+    .navbar-brand img {
+        filter: brightness(0) invert(1);
+        transition: filter 0.3s ease;
+    }
+
+    // CUSTUM BUTTON REMOVE 
+
+    .btn-remove {
+        border: 1px solid white;
+        color: whitesmoke;
+
+        &:hover {
+            background-color: $primary !important;
         }
     }
 }
